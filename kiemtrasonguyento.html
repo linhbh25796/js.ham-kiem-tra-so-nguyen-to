@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm kiểm tra số nguyên tố</title>
+</head>
+<body>
+
+</body>
+<script>
+    let num = prompt("Nhập: ");
+    function checkNum(num) {
+        let squareRoot = Math.sqrt(num);
+        for (let i = 2; i <= squareRoot; i++) {
+            if (num % i === 0) {
+                document.write(num+" không phải số nguyên tố");
+                return false;
+            }
+        }
+        document.write(num+" là số nguyên tố")
+        return true;
+    }
+    checkNum(num);
+
+
+</script>
+</html>
